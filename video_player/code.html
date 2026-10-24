@@ -1,0 +1,268 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_blank" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131313;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#ffb4aa", "tertiary-fixed-dim": "#a7c8ff", "on-background": "#e5e2e1", "on-secondary-fixed-variant": "#454747", "tertiary-fixed": "#d5e3ff", "secondary-fixed": "#e2e2e2", "secondary-fixed-dim": "#c6c6c7", "on-tertiary-container": "#f8f9ff", "on-error": "#690005", "on-error-container": "#ffdad6", "on-primary-container": "#fff7f6", "tertiary-container": "#0072d7", "surface-bright": "#393939", "surface": "#131313", "surface-container-high": "#2a2a2a", "surface-variant": "#353534", "surface-dim": "#131313", "outline-variant": "#5e3f3b", "error-container": "#93000a", "primary-container": "#e50914", "surface-container-highest": "#353534", "surface-container": "#201f1f", "primary": "#ffb4aa", "on-secondary": "#2f3131", "on-primary-fixed-variant": "#930007", "inverse-primary": "#c0000c", "background": "#131313", "surface-container-lowest": "#0e0e0e", "inverse-on-surface": "#313030", "secondary-container": "#454747", "inverse-surface": "#e5e2e1", "on-tertiary": "#003061", "surface-container-low": "#1c1b1b", "error": "#ffb4ab", "primary-fixed": "#ffdad5", "on-secondary-fixed": "#1a1c1c", "outline": "#af8782", "secondary": "#c6c6c7", "on-surface-variant": "#e9bcb6", "on-surface": "#e5e2e1", "tertiary": "#a7c8ff", "on-tertiary-fixed-variant": "#004689", "on-primary": "#690003", "on-tertiary-fixed": "#001b3c", "on-secondary-container": "#b4b5b5", "surface-tint": "#ffb4aa", "on-primary-fixed": "#410001" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-desktop": "4rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "margin-tablet": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "1rem", "space-xl": "2.5rem" }, fontFamily: { "headline-sm": ["Inter"], "display-hero-mobile": ["Bebas Neue"], "label-md": ["Inter"], "headline-lg": ["Bebas Neue"], "label-sm": ["Inter"], "headline-xl": ["Bebas Neue"], "body-lg": ["Inter"], "body-sm": ["Inter"], "display-hero": ["Bebas Neue"], "body-md": ["Inter"], "headline-xl-mobile": ["Bebas Neue"] }, fontSize: { "headline-sm": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-hero-mobile": ["56px", { lineHeight: "54px", letterSpacing: "0.02em", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "34px", letterSpacing: "0.04em", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "700" }], "headline-xl": ["48px", { lineHeight: "48px", letterSpacing: "0.03em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "display-hero": ["96px", { lineHeight: "92px", letterSpacing: "0.02em", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-xl-mobile": ["32px", { lineHeight: "34px", letterSpacing: "0.03em", fontWeight: "400" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen pt-safe pb-safe"><main class="flex flex-col relative w-full bg-surface min-h-screen"><div class="flex flex-col w-full relative select-none overflow-hidden" id="player-container">
+<!-- Cinematic Background Layer -->
+<div class="relative w-full aspect-[9/16] max-h-[92vh] overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<img alt="Shadow Protocol movie still featuring hooded operative in neon rain-slicked cyberpunk alleyway" class="absolute inset-0 w-full h-full object-cover pointer-events-none scale-105 transition-transform duration-700" id="video-frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAUtBVURf3OiPqWnc0igR3hqnlSeYLEmavAL48oRf9aV2U5HrMREStnCnKHaQC-_T5-2EoROC1egCTVGWM5fBMGJfrwUOJyClRvukKK1yC9r5ZRA0Hcd73Oq5gt_1Ln0iL1IgfQ9_FBbY1BzBU8LdldvkjdoDeKgvdlmmbG_rPamhCbP_lWfiEEg81E4oE6D85CTtZaDSV6Fcr117RSdRqs6j9QWDPNHUlA4auqdjUDQu6l_yU4EfukQ">
+<!-- Ambient Scrim / Vignette Gradients -->
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/90 via-transparent to-surface-container-lowest/95 pointer-events-none"></div>
+<div class="absolute inset-0 bg-radial from-transparent via-surface-container-lowest/30 to-surface-container-lowest/90 pointer-events-none"></div>
+<!-- UI Overlay Controls Container (toggled on tap) -->
+<div class="absolute inset-0 flex flex-col justify-between p-space-md transition-opacity duration-300 opacity-100 z-20" id="controls-layer">
+<!-- Top Control Bar -->
+<header class="flex items-center justify-between w-full pt-space-xs">
+<!-- Back and Title Block -->
+<div class="flex items-center gap-space-sm min-w-0 pr-space-sm">
+<button aria-label="Exit player" class="w-10 h-10 rounded-full bg-surface-container-high/60 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors active:scale-95 shrink-0" type="button">
+<span class="material-symbols-outlined text-headline-sm">arrow_back</span>
+</button>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-wide truncate uppercase leading-none">SHADOW PROTOCOL</h1>
+<span class="bg-primary-container text-on-primary-container text-label-sm font-label-sm px-1.5 py-0.5 rounded tracking-widest shrink-0 uppercase">4K HDR</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary truncate">2024 • Action Thriller • Dolby Atmos</p>
+</div>
+</div>
+<!-- Top Right Action Icons -->
+<div class="flex items-center gap-1.5 shrink-0">
+<button aria-label="Cast to screen" class="w-9 h-9 rounded-full bg-surface-container-high/60 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-body-lg">cast</span>
+</button>
+<button aria-label="Audio and Subtitles" class="w-9 h-9 rounded-full bg-surface-container-high/60 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-body-lg">subtitles</span>
+</button>
+<button aria-label="Adjust Aspect Ratio" class="w-9 h-9 rounded-full bg-surface-container-high/60 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-body-lg">aspect_ratio</span>
+</button>
+<button aria-label="More options" class="w-9 h-9 rounded-full bg-surface-container-high/60 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-body-lg">more_vert</span>
+</button>
+</div>
+</header>
+<!-- Center Playback Controls -->
+<div class="flex items-center justify-center gap-8 my-auto">
+<!-- Rewind 10s -->
+<button aria-label="Rewind 10 seconds" class="group relative flex flex-col items-center justify-center w-12 h-12 rounded-full bg-surface-container-high/70 backdrop-blur-md text-on-surface hover:bg-surface-container-highest active:scale-90 transition-all" id="btn-rewind" type="button">
+<span class="material-symbols-outlined text-[28px]">replay_10</span>
+<span class="sr-only">Rewind 10s</span>
+</button>
+<!-- Main Play / Pause Button -->
+<button aria-label="Play or Pause" class="relative flex items-center justify-center w-18 h-18 w-[72px] h-[72px] rounded-full bg-white text-surface-container-lowest shadow-2xl hover:scale-105 active:scale-95 transition-all" id="btn-play-toggle" type="button">
+<span class="material-symbols-outlined text-[42px] leading-none" id="play-icon" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<!-- Fast Forward 10s -->
+<button aria-label="Forward 10 seconds" class="group relative flex flex-col items-center justify-center w-12 h-12 rounded-full bg-surface-container-high/70 backdrop-blur-md text-on-surface hover:bg-surface-container-highest active:scale-90 transition-all" id="btn-forward" type="button">
+<span class="material-symbols-outlined text-[28px]">forward_10</span>
+<span class="sr-only">Forward 10s</span>
+</button>
+</div>
+<!-- Bottom Interactive Region -->
+<div class="flex flex-col w-full gap-space-sm pb-space-xs">
+<!-- Floating Contextual Pill ("Skip Intro") -->
+<div class="flex justify-end w-full mb-1">
+<button class="group flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-high/85 backdrop-blur-md text-on-surface hover:bg-surface-bright active:scale-95 transition-all shadow-lg" id="btn-skip" type="button">
+<span class="font-label-sm text-label-sm tracking-wider uppercase">Skip Intro</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container group-hover:translate-x-0.5 transition-transform">fast_forward</span>
+</button>
+</div>
+<!-- Scrub Timeline & Slider -->
+<div class="flex flex-col w-full gap-1.5">
+<!-- Scrubber Track -->
+<div class="relative w-full h-7 flex items-center cursor-pointer group" id="scrub-container">
+<!-- Background Rail -->
+<div class="relative w-full h-1 bg-surface-container-highest/80 rounded-full overflow-hidden">
+<!-- Buffer Track -->
+<div class="absolute left-0 top-0 bottom-0 w-[68%] bg-white/20 rounded-full"></div>
+<!-- Played Fill Track -->
+<div class="absolute left-0 top-0 bottom-0 w-[31.4%] bg-primary-container rounded-full transition-[width] duration-150" id="scrub-fill"></div>
+</div>
+<!-- Scrubber Thumb with Preview Tooltip -->
+<div class="absolute left-[31.4%] -translate-x-1/2 w-3.5 h-3.5 bg-white rounded-full shadow-md flex items-center justify-center transition-transform scale-100 group-hover:scale-125" id="scrub-thumb">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<!-- Floating Hover/Active Scrub Thumbnail Preview -->
+<div class="absolute left-[31.4%] bottom-6 -translate-x-1/2 hidden group-hover:flex flex-col items-center pointer-events-none">
+<div class="w-24 h-14 rounded bg-surface-container-highest overflow-hidden shadow-xl mb-1 relative">
+<img alt="Preview timeline clip" class="w-full h-full object-cover scale-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAUtBVURf3OiPqWnc0igR3hqnlSeYLEmavAL48oRf9aV2U5HrMREStnCnKHaQC-_T5-2EoROC1egCTVGWM5fBMGJfrwUOJyClRvukKK1yC9r5ZRA0Hcd73Oq5gt_1Ln0iL1IgfQ9_FBbY1BzBU8LdldvkjdoDeKgvdlmmbG_rPamhCbP_lWfiEEg81E4oE6D85CTtZaDSV6Fcr117RSdRqs6j9QWDPNHUlA4auqdjUDQu6l_yU4EfukQ">
+<div class="absolute inset-0 bg-surface-container-lowest/30"></div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-on-surface">00:42:15</span>
+</div>
+</div>
+<!-- Time Indicators -->
+<div class="flex items-center justify-between font-label-sm text-label-sm text-secondary px-0.5">
+<span id="current-time">42:15</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span id="remaining-time">-1:32:45</span>
+</div>
+</div>
+</div>
+<!-- Lower Action Bar Buttons -->
+<div class="flex items-center justify-between w-full pt-1">
+<!-- Left Utilities -->
+<div class="flex items-center gap-space-xs">
+<!-- Playback Speed Chip -->
+<button class="px-2.5 py-1 rounded bg-surface-container-high/60 backdrop-blur hover:bg-surface-container-highest transition-colors active:scale-95 text-on-surface font-label-sm text-label-sm flex items-center gap-1" id="btn-speed" type="button">
+<span class="material-symbols-outlined text-[15px] text-secondary">speed</span>
+<span id="speed-label">1.0x</span>
+</button>
+<!-- Lock Screen Button -->
+<button aria-label="Lock screen overlay" class="w-8 h-8 rounded bg-surface-container-high/60 backdrop-blur hover:bg-surface-container-highest transition-colors active:scale-95 text-secondary hover:text-on-surface flex items-center justify-center" id="btn-lock" type="button">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+</button>
+</div>
+<!-- Right Stream Controls -->
+<div class="flex items-center gap-2">
+<!-- Audio & Track Specs pill -->
+<button class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high/60 backdrop-blur text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">audiotrack</span>
+<span class="truncate max-w-[120px]">Eng [5.1]</span>
+</button>
+<!-- Next Episode / Title -->
+<button class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high/60 backdrop-blur hover:bg-surface-container-highest transition-colors active:scale-95 text-on-surface font-label-sm text-label-sm" type="button">
+<span>Next</span>
+<span class="material-symbols-outlined text-[16px]">skip_next</span>
+</button>
+<!-- Fullscreen / Orientation Toggle -->
+<button aria-label="Toggle Fullscreen" class="w-8 h-8 rounded bg-surface-container-high/60 backdrop-blur hover:bg-surface-container-highest transition-colors active:scale-95 text-on-surface flex items-center justify-center" id="btn-fullscreen" type="button">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Feedback Micro-interaction HUD (Hidden by default) -->
+<div class="absolute pointer-events-none flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-md text-label-md transition-all duration-200 opacity-0 scale-90 z-30" id="hud-indicator">
+<span class="material-symbols-outlined text-primary-container" id="hud-icon">play_arrow</span>
+<span id="hud-text">Playing</span>
+</div>
+<!-- Locked Mode Overlay State (Hidden initially) -->
+<div class="absolute inset-0 bg-surface-container-lowest/40 backdrop-blur-[2px] hidden flex-col items-center justify-center z-40" id="locked-overlay">
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-high/90 text-on-surface shadow-2xl active:scale-95 transition-all" id="btn-unlock" type="button">
+<span class="material-symbols-outlined text-primary">lock</span>
+<span class="font-label-md text-label-md">Screen Locked • Tap to Unlock</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (() => {
+    const playToggleBtn = document.getElementById('btn-play-toggle');
+    const playIcon = document.getElementById('play-icon');
+    const hud = document.getElementById('hud-indicator');
+    const hudIcon = document.getElementById('hud-icon');
+    const hudText = document.getElementById('hud-text');
+    const skipBtn = document.getElementById('btn-skip');
+    const lockBtn = document.getElementById('btn-lock');
+    const unlockBtn = document.getElementById('btn-unlock');
+    const lockedOverlay = document.getElementById('locked-overlay');
+    const controlsLayer = document.getElementById('controls-layer');
+    const speedBtn = document.getElementById('btn-speed');
+    const speedLabel = document.getElementById('speed-label');
+    const scrubRail = document.getElementById('scrub-container');
+    const scrubFill = document.getElementById('scrub-fill');
+    const scrubThumb = document.getElementById('scrub-thumb');
+    const currentTimeEl = document.getElementById('current-time');
+    const remainingTimeEl = document.getElementById('remaining-time');
+    const rewindBtn = document.getElementById('btn-rewind');
+    const forwardBtn = document.getElementById('btn-forward');
+
+    let isPlaying = true;
+    let totalSeconds = 8100; // 2h 15m
+    let currentSeconds = 2535; // 42m 15s
+    const speeds = ['0.75x', '1.0x', '1.25x', '1.5x'];
+    let speedIndex = 1;
+    let hudTimeout;
+
+    const formatTime = (secs) => {
+      const h = Math.floor(secs / 3600);
+      const m = Math.floor((secs % 3600) / 60);
+      const s = Math.floor(secs % 60);
+      const pad = (n) => String(n).padStart(2, '0');
+      if (h > 0) return `${h}:${pad(m)}:${pad(s)}`;
+      return `${pad(m)}:${pad(s)}`;
+    };
+
+    const updateTimelineUI = () => {
+      const percent = Math.min(100, Math.max(0, (currentSeconds / totalSeconds) * 100));
+      scrubFill.style.width = `${percent}%`;
+      scrubThumb.style.left = `${percent}%`;
+      currentTimeEl.textContent = formatTime(currentSeconds);
+      remainingTimeEl.textContent = `-${formatTime(totalSeconds - currentSeconds)}`;
+    };
+
+    const showHUD = (icon, text) => {
+      clearTimeout(hudTimeout);
+      hudIcon.textContent = icon;
+      hudText.textContent = text;
+      hud.classList.remove('opacity-0', 'scale-90');
+      hud.classList.add('opacity-100', 'scale-100');
+      hudTimeout = setTimeout(() => {
+        hud.classList.remove('opacity-100', 'scale-100');
+        hud.classList.add('opacity-0', 'scale-90');
+      }, 900);
+    };
+
+    playToggleBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      isPlaying = !isPlaying;
+      playIcon.textContent = isPlaying ? 'pause' : 'play_arrow';
+      showHUD(isPlaying ? 'play_arrow' : 'pause', isPlaying ? 'Resumed' : 'Paused');
+    });
+
+    rewindBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentSeconds = Math.max(0, currentSeconds - 10);
+      updateTimelineUI();
+      showHUD('replay_10', '-10 Seconds');
+    });
+
+    forwardBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentSeconds = Math.min(totalSeconds, currentSeconds + 10);
+      updateTimelineUI();
+      showHUD('forward_10', '+10 Seconds');
+    });
+
+    skipBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentSeconds = Math.min(totalSeconds, currentSeconds + 85);
+      updateTimelineUI();
+      skipBtn.style.display = 'none';
+      showHUD('fast_forward', 'Intro Skipped');
+    });
+
+    speedBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      speedIndex = (speedIndex + 1) % speeds.length;
+      const newSpeed = speeds[speedIndex];
+      speedLabel.textContent = newSpeed;
+      showHUD('speed', `Speed: ${newSpeed}`);
+    });
+
+    lockBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      lockedOverlay.classList.remove('hidden');
+      lockedOverlay.classList.add('flex');
+      controlsLayer.classList.add('pointer-events-none', 'opacity-0');
+    });
+
+    unlockBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      lockedOverlay.classList.add('hidden');
+      lockedOverlay.classList.remove('flex');
+      controlsLayer.classList.remove('pointer-events-none', 'opacity-0');
+      showHUD('lock_open', 'Controls Unlocked');
+    });
+
+    scrubRail?.addEventListener('click', (e) => {
+      const rect = scrubRail.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const ratio = Math.max(0, Math.min(1, clickX / rect.width));
+      currentSeconds = Math.round(ratio * totalSeconds);
+      updateTimelineUI();
+    });
+  })();
+</script></main></body></html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131313;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#ffb4aa", "tertiary-fixed-dim": "#a7c8ff", "on-background": "#e5e2e1", "on-secondary-fixed-variant": "#454747", "tertiary-fixed": "#d5e3ff", "secondary-fixed": "#e2e2e2", "secondary-fixed-dim": "#c6c6c7", "on-tertiary-container": "#f8f9ff", "on-error": "#690005", "on-error-container": "#ffdad6", "on-primary-container": "#fff7f6", "tertiary-container": "#0072d7", "surface-bright": "#393939", "surface": "#131313", "surface-container-high": "#2a2a2a", "surface-variant": "#353534", "surface-dim": "#131313", "outline-variant": "#5e3f3b", "error-container": "#93000a", "primary-container": "#e50914", "surface-container-highest": "#353534", "surface-container": "#201f1f", "primary": "#ffb4aa", "on-secondary": "#2f3131", "on-primary-fixed-variant": "#930007", "inverse-primary": "#c0000c", "background": "#131313", "surface-container-lowest": "#0e0e0e", "inverse-on-surface": "#313030", "secondary-container": "#454747", "inverse-surface": "#e5e2e1", "on-tertiary": "#003061", "surface-container-low": "#1c1b1b", "error": "#ffb4ab", "primary-fixed": "#ffdad5", "on-secondary-fixed": "#1a1c1c", "outline": "#af8782", "secondary": "#c6c6c7", "on-surface-variant": "#e9bcb6", "on-surface": "#e5e2e1", "tertiary": "#a7c8ff", "on-tertiary-fixed-variant": "#004689", "on-primary": "#690003", "on-tertiary-fixed": "#001b3c", "on-secondary-container": "#b4b5b5", "surface-tint": "#ffb4aa", "on-primary-fixed": "#410001" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-desktop": "4rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "margin-tablet": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "1rem", "space-xl": "2.5rem" }, fontFamily: { "headline-sm": ["Inter"], "display-hero-mobile": ["Bebas Neue"], "label-md": ["Inter"], "headline-lg": ["Bebas Neue"], "label-sm": ["Inter"], "headline-xl": ["Bebas Neue"], "body-lg": ["Inter"], "body-sm": ["Inter"], "display-hero": ["Bebas Neue"], "body-md": ["Inter"], "headline-xl-mobile": ["Bebas Neue"] }, fontSize: { "headline-sm": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-hero-mobile": ["56px", { lineHeight: "54px", letterSpacing: "0.02em", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "34px", letterSpacing: "0.04em", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "700" }], "headline-xl": ["48px", { lineHeight: "48px", letterSpacing: "0.03em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "display-hero": ["96px", { lineHeight: "92px", letterSpacing: "0.02em", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-xl-mobile": ["32px", { lineHeight: "34px", letterSpacing: "0.03em", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="StreamFlix Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UHyaYM4ithnbzTsWhwmc4mTMF_9kCRjm81kbfZv7vQtzs0gCigJ5Ta2tyt5J2iVISKXPK2VWNiUa_UjZLqtl0m1D4fUst3aufU-_FHnZDXHNE535cSryf14VglGPLC3ZuQ-XKrII7xxfjsGfErMO571tgrYVP87GnJlwuE9F9TSx4Q3nhFKRzDgYlDP6xXfpVJvKIjgEYWzAFtVfDEFmna0Qj5HfM5zBkyLb-oEgZXgM_9FIw9EhWcpU-z"><span class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-wider hidden xs:inline">My List</span></div><div class="flex items-center gap-space-xs"><button aria-label="Cast to screen" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary-container transition-colors"><span class="material-symbols-outlined">cast</span></button><button aria-label="Search catalog" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary-container transition-colors"><span class="material-symbols-outlined">search</span></button><div class="w-11 h-11 flex items-center justify-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjsolIrz7twpKPSYChcXaWda1_Gne4QCYitoG8QvSm2vfuiWTuJwo0Rir137eVlwG9HLmZC-HnVP4Z_jByBWJTZ1i6HpTEcUoCJc_fu9vcTFTWZiEaITwVLd-BR71utGBw4uUZ3eWF9oLQ21tMp7Pmb2DSvOPLdm39scalFy7kET2mckXaczq5NJhJDgQB2W_nl1azs6E8fY3jeVHB_jCm_N7GfAvdFKjUMXJVDaqCNVS8QjTONp-XHw"></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<div class="px-gutter pt-space-md pb-space-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-wider uppercase">My List</h1>
+<span class="font-label-md text-label-md text-secondary font-normal" id="titleCount">(24 Titles)</span>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-all active:scale-95 flex items-center gap-1.5" id="editToggleBtn" onclick="toggleEditMode()">
+<span class="material-symbols-outlined text-body-lg" id="editIcon">tune</span>
+<span id="editText">Edit</span>
+</button>
+</div>
+<!-- Filter & Sort Bar -->
+<div class="flex items-center justify-between gap-space-sm overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-space-xs" id="filterPills">
+<button class="filter-pill h-8 px-space-md rounded-full bg-on-surface text-surface font-label-md text-label-md transition-all shadow-sm" onclick="setFilter(this, 'all')">All</button>
+<button class="filter-pill h-8 px-space-md rounded-full bg-surface-container text-secondary hover:text-on-surface font-label-md text-label-md transition-all" onclick="setFilter(this, 'movies')">Movies</button>
+<button class="filter-pill h-8 px-space-md rounded-full bg-surface-container text-secondary hover:text-on-surface font-label-md text-label-md transition-all" onclick="setFilter(this, 'series')">Series</button>
+</div>
+<div class="relative">
+<button class="h-8 px-space-sm rounded-full bg-surface-container-low text-secondary hover:text-on-surface font-label-sm text-label-sm uppercase flex items-center gap-1 shrink-0" onclick="toggleSortMenu()">
+<span class="material-symbols-outlined text-body-sm text-primary-container">sort</span>
+<span id="currentSort">Added</span>
+<span class="material-symbols-outlined text-body-sm">arrow_drop_down</span>
+</button>
+<div class="hidden absolute right-0 top-10 w-44 bg-surface-container-high rounded-xl shadow-2xl p-1.5 z-40 flex flex-col gap-1" id="sortMenu">
+<button class="w-full text-left px-space-sm py-2 rounded font-label-md text-label-md text-on-surface hover:bg-surface-bright flex items-center justify-between" onclick="selectSort('Date Added')">
+<span>Date Added</span>
+<span class="material-symbols-outlined text-primary-container text-body-md">check</span>
+</button>
+<button class="w-full text-left px-space-sm py-2 rounded font-label-md text-label-md text-secondary hover:text-on-surface hover:bg-surface-bright flex items-center justify-between" onclick="selectSort('Alphabetical')">
+<span>Alphabetical</span>
+</button>
+<button class="w-full text-left px-space-sm py-2 rounded font-label-md text-label-md text-secondary hover:text-on-surface hover:bg-surface-bright flex items-center justify-between" onclick="selectSort('Release Date')">
+<span>Release Date</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bulk Edit Banner (Hidden by default) -->
+<div class="hidden px-gutter py-space-xs bg-surface-container-high flex items-center justify-between my-space-xs transition-all" id="bulkActionBar">
+<span class="font-label-md text-label-md text-secondary" id="selectedCounter">0 selected</span>
+<div class="flex items-center gap-space-sm">
+<button class="text-secondary hover:text-on-surface font-label-sm text-label-sm uppercase" onclick="selectAllItems()">Select All</button>
+<button class="px-space-md py-1 rounded bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1 shadow-md active:scale-95" onclick="deleteSelected()">
+<span class="material-symbols-outlined text-body-md">delete</span>
+<span>Remove</span>
+</button>
+</div>
+</div>
+<!-- 3-Column Poster Grid -->
+<div class="px-gutter py-space-sm">
+<div class="grid grid-cols-3 gap-2.5" id="posterGrid">
+<!-- Card 1 -->
+<div class="poster-item relative group flex flex-col rounded-lg overflow-hidden bg-surface-container-low shadow-md transition-all" data-title="Cyber Chronicles: Neo Tokyo" data-type="series">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-active:scale-105 transition-transform duration-300" data-alt="Futuristic neon-soaked cinematic movie poster featuring a female cyborg runner traversing sprawling vertical holographic towers in rain-slicked Neo Tokyo, moody cyan and crimson lighting, hyper-detailed digital art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR8DJIvoOXmv8dWjxLG5muso-nbfCfrOshHjRhl8JezvKMf87Zt99j-NvekBSoW2q3cwAHWgF3D1AqiW91TYLy858PGuQlaR24bu6Sarj2FRXvgW2CZrQAAicAkkB-nncy3mbZv75_l5vbzBbzVr2e5Pjmy2xGu5BOnUy5T9VsnNyx05qXM6rILoX-3GF-fNBW5xfKfMwl5D-gwcZmCT_LIlXvUW83Dhy0Pp2f2Y5IL64zp1mqlbpHkw">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-black/30"></div>
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 z-10">
+<span class="bg-primary-container text-on-primary-container font-label-sm text-[9px] uppercase px-1.5 py-0.5 rounded tracking-wider font-bold shadow">New Season</span>
+</div>
+<div class="edit-checkbox hidden absolute top-2 right-2 z-20">
+<input class="w-5 h-5 accent-primary-container rounded cursor-pointer" onchange="updateSelectedCount()" type="checkbox">
+</div>
+<button class="card-dots-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-on-surface active:bg-surface-bright z-10" onclick="openActionMenu(event, 'Cyber Chronicles: Neo Tokyo')">
+<span class="material-symbols-outlined text-body-md">more_vert</span>
+</button>
+<div class="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between text-[10px] text-secondary font-label-sm">
+<span class="px-1 rounded bg-black/70 text-on-surface">TV-MA</span>
+<span class="flex items-center text-on-surface gap-0.5"><span class="material-symbols-outlined text-[12px] text-primary-container">star</span> 98%</span>
+</div>
+</div>
+<div class="p-1.5 bg-surface-container-low">
+<p class="font-label-md text-label-md text-on-surface truncate">Cyber Chronicles</p>
+<p class="font-body-sm text-[11px] text-secondary truncate">Sci-Fi Series</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="poster-item relative group flex flex-col rounded-lg overflow-hidden bg-surface-container-low shadow-md transition-all" data-title="Shadow Protocol" data-type="movies">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-active:scale-105 transition-transform duration-300" data-alt="High stakes tactical espionage film poster with lone silhouette agent walking through fog on a cold industrial bridge, cinematic high-contrast rim lighting, muted steel teal and obsidian aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo2eKOeQYx-ps2W_x_lD1wbLAuFFY4ROQBIQWDr3HxCy5WXAHMf090bCPUVWAWOMgMvcuRdpZUYZ3VO3WpkqAObOQI5D9QxdXNXjAU3lLl2xGDwhD37Lk2V-jl56fys-BfOcThc67Hr5LaQ2SMDCSBvk6qRbCJbuSPDbXQiAeJ4JLnQaBvQITG0xqbbwiWiIbHlNV2nrjKNET_MJF-acNGqkKNl5zXrEN_nBVzbLvjBOgMXfdZI58I7A">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-black/30"></div>
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 z-10">
+<span class="bg-primary-container text-on-primary-container font-label-sm text-[9px] uppercase px-1.5 py-0.5 rounded tracking-wider font-bold shadow">Top 10</span>
+</div>
+<div class="edit-checkbox hidden absolute top-2 right-2 z-20">
+<input class="w-5 h-5 accent-primary-container rounded cursor-pointer" onchange="updateSelectedCount()" type="checkbox">
+</div>
+<button class="card-dots-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-on-surface active:bg-surface-bright z-10" onclick="openActionMenu(event, 'Shadow Protocol')">
+<span class="material-symbols-outlined text-body-md">more_vert</span>
+</button>
+<div class="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between text-[10px] text-secondary font-label-sm">
+<span class="px-1 rounded bg-black/70 text-on-surface">R</span>
+<span class="px-1 rounded bg-surface-variant text-on-surface-variant text-[9px]">4K</span>
+</div>
+</div>
+<div class="p-1.5 bg-surface-container-low">
+<p class="font-label-md text-label-md text-on-surface truncate">Shadow Protocol</p>
+<p class="font-body-sm text-[11px] text-secondary truncate">Spy Thriller</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="poster-item relative group flex flex-col rounded-lg overflow-hidden bg-surface-container-low shadow-md transition-all" data-title="Stranger Dimensions" data-type="series">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-active:scale-105 transition-transform duration-300" data-alt="Surreal cosmic horror movie poster depicting an upside-down 1980s retro American suburban town illuminated by glowing dimensional tears and crimson vortex sky, dark cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ0zUL2Nj_dUj0yN-54p9kyz_KL-N8_OcTQlrNUZlNfVtVclGd3rWfY6N51Bhy17PbLxsjA4zavDGOEARCW5ET0ri4Z6FosgIREMOxd0MLhEtpNsg5gdXtGc8irt-vs1s0EaoIKDJqMOjw_JHi0WDUeZysC0SZV2_UxKlAgG23NeEsfflKFp7vKLf3AJN6hxMxpxsYKJZ-vS4V_wj2Qz0TBn0s-i_nsFTwoL1zECrpFON_pQ9b9ab6QA">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-black/30"></div>
+<div class="edit-checkbox hidden absolute top-2 right-2 z-20">
+<input class="w-5 h-5 accent-primary-container rounded cursor-pointer" onchange="updateSelectedCount()" type="checkbox">
+</div>
+<button class="card-dots-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-on-surface active:bg-surface-bright z-10" onclick="openActionMenu(event, 'Stranger Dimensions')">
+<span class="material-symbols-outlined text-body-md">more_vert</span>
+</button>
+<div class="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between text-[10px] text-secondary font-label-sm">
+<span class="px-1 rounded bg-black/70 text-on-surface">TV-14</span>
+<span class="flex items-center text-on-surface gap-0.5"><span class="material-symbols-outlined text-[12px] text-primary-container">star</span> 96%</span>
+</div>
+</div>
+<div class="p-1.5 bg-surface-container-low">
+<p class="font-label-md text-label-md text-on-surface truncate">Stranger Dimensions</p>
+<p class="font-body-sm text-[11px] text-secondary truncate">Supernatural</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="poster-item relative group flex flex-col rounded-lg overflow-hidden bg-surface-container-low shadow-md transition-all" data-title="Mind Hunters" data-type="series">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-active:scale-105 transition-transform duration-300" data-alt="Moody psychological crime thriller poster featuring an intense silhouette profile overlaying vintage magnetic tape recorders, crime scene photographs and crimson shadow motifs in dark interrogation room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiwpQ9x3eFtn4zxSnrbzNH2jkXUGlbjZjgQynQ3g8V-K2BV4T2LqplR2rxw7tZhd24wxR8noD0P97wwOWKb0d_4X_aKA-g1M-aRuWRt2ns9l40h6dqNF6ZX0iJaJ-Co7vvk4efZ0gPHEfnWLenLqqFl4UeOMMvzRvoygsfRI7WADJTeByMLmNV0Rf1ZMk5SM7AOOlLd_SmgHa2KBFMVuWpgpDdiL-LtIW30KGPMuUPQNxPfxg44JQ6bQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-black/30"></div>
+<div class="edit-checkbox hidden absolute top-2 right-2 z-20">
+<input class="w-5 h-5 accent-primary-container rounded cursor-pointer" onchange="updateSelectedCount()" type="checkbox">
+</div>
+<button class="card-dots-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-on-surface active:bg-surface-bright z-10" onclick="openActionMenu(event, 'Mind Hunters')">
+<span class="material-symbols-outlined text-body-md">more_vert</span>
+</button>
+<div class="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between text-[10px] text-secondary font-label-sm">
+<span class="px-1 rounded bg-black/70 text-on-surface">TV-MA</span>
+<span class="px-1 rounded bg-surface-variant text-on-surface-variant text-[9px]">HDR</span>
+</div>
+</div>
+<div class="p-1.5 bg-surface-container-low">
+<p class="font-label-md text-label-md text-on-surface truncate">Mind Hunters</p>
+<p class="font-body-sm text-[11px] text-secondary truncate">Psychological</p>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="poster-item relative group flex flex-col rounded-lg overflow-hidden bg-surface-container-low shadow-md transition-all" data-title="Apex Vector" data-type="movies">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-active:scale-105 transition-transform duration-300" data-alt="Adrenaline racing movie poster showcasing an aerodynamic hypercar drifting through a torrential night metropolis, intense crimson taillight streaks, chrome reflections and cinematic motion blur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxMoJ8ev2bPoOqSr5z0jGeRmzW265k4qXo3f5k2HGLZHfyWWPQB8MJGNbIQzz0xiHaltZSBbAdePe8RrymRxZ9uVRAvEiYl8qe7_JPa6mfdfhoANCVmraQQBi6Qv_zYgLaHoOBq9kZLwbTMHdSDWoi-iZYuXw28As2y6WCJ9BSduGBQDNvLd-oPIZxlSJnf18Uaq-q-HuMBuv3oGaPFBM0837uGK7DW0E0SD14jM1SG1D_XbnyWKbd1Q">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-black/30"></div>
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 z-10">
+<span class="bg-primary-container text-on-primary-container font-label-sm text-[9px] uppercase px-1.5 py-0.5 rounded tracking-wider font-bold shadow">Top 10</span>
+</div>
+<div class="edit-checkbox hidden absolute top-2 right-2 z-20">
+<input class="w-5 h-5 accent-primary-container rounded cursor-pointer" onchange="updateSelectedCount()" type="checkbox">
+</div>
+<button class="card-dots-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-on-surface active:bg-surface-bright z-10" onclick="openActionMenu(event, 'Apex Vector')">
+<span class="material-symbols-outlined text-body-md">more_vert</span>
+</button>
+<div class="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between text-[10px] text-secondary font-label-sm">
+<span class="px-1 rounded bg-black/70 text-on-surface">PG-13</span>
+<span class="flex items-center text-on-surface gap-0.5"><span class="material-symbols-outlined text-[12px] text-primary-container">star</span> 92%</span>
+</div>
+</div>
+<div class="p-1.5 bg-surface-container-low">
+<p class="font-label-md text-label-md text-on-surface truncate">Apex Vector</p>
+<p class="font-body-sm text-[11px] text-secondary truncate">Action Thriller</p>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="poster-item relative group flex flex-col rounded-lg overflow-hidden bg-surface-container-low shadow-md transition-all" data-title="The Mariana Rift" data-type="movies">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-active:scale-105 transition-transform duration-300" data-alt="Deep sea ocean exploration sci-fi horror film poster with a small yellow manned submarine descending into an abyssal trench illuminated by bioluminescent alien tendrils in ink-black water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkxQCD_rypbGXL4q9DH6Stzc8lulyaEHVOxk-QJT2F9Wa9ovi4DPMnrh7Hl8OLmhlotP10OCOwKpafZAfSmQDCaJ0NCrsN7Dat49HypXTerHs_8mjoikeYGtF-G13iWij8vAqy7B0Nj2H80dJxRCyaF6FFGPObpcjT4JbuI5acp4Wz9LSYtRqZV3xRuqcBap0QF4hmrE-1KFjpOXoeXiab0NhiSdsr_6wWvzuH7TmjUkB8VS0kynzOLw">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-black/30"></div>
+<div class="edit-checkbox hidden absolute top-2 right-2 z-20">
+<input class="w-5 h-5 accent-primary-container rounded cursor-pointer" onchange="updateSelectedCount()" type="checkbox">
+</div>
+<button class="card-dots-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-on-surface active:bg-surface-bright z-10" onclick="openActionMenu(event, 'The Mariana Rift')">
+<span class="material-symbols-outlined text-body-md">more_vert</span>
+</button>
+<div class="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between text-[10px] text-secondary font-label-sm">
+<span class="px-1 rounded bg-black/70 text-on-surface">PG-13</span>
+<span class="px-1 rounded bg-surface-variant text-on-surface-variant text-[9px]">4K</span>
+</div>
+</div>
+<div class="p-1.5 bg-surface-container-low">
+<p class="font-label-md text-label-md text-on-surface truncate">The Mariana Rift</p>
+<p class="font-body-sm text-[11px] text-secondary truncate">Sci-Fi Horror</p>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="poster-item relative group flex flex-col rounded-lg overflow-hidden bg-surface-container-low shadow-md transition-all" data-title="Zero Degree" data-type="movies">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-active:scale-105 transition-transform duration-300" data-alt="Arctic survival drama movie poster showing a solo explorer braving a violent blizzard on an Antarctic ice shelf under a low pale winter sun, intense frost textures and raw desolate atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB9MI0aer_UPNJYEEeIXT3UYLn1jD9aCsSQBRYg2hiD6euhhcnowbJiKc3rb3ISt6e6TxgIIZXWivx3CkBR2WKInHcqMIu4kUPZIzQcaUBYaS-q1UEEbTzIas2I3j9qAJd_-fGNInJjqDlZaz4g9M3pB6UAV6O0lr3mS-EgjEvGMz1NhU-HALtrryDyiidJQxJ05SG7k0Ty6OY0wA6rLQc2T_6A2_4g6tSyBNT4RcROBEqFa4r5iFfUQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-black/30"></div>
+<div class="edit-checkbox hidden absolute top-2 right-2 z-20">
+<input class="w-5 h-5 accent-primary-container rounded cursor-pointer" onchange="updateSelectedCount()" type="checkbox">
+</div>
+<button class="card-dots-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-on-surface active:bg-surface-bright z-10" onclick="openActionMenu(event, 'Zero Degree')">
+<span class="material-symbols-outlined text-body-md">more_vert</span>
+</button>
+<div class="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between text-[10px] text-secondary font-label-sm">
+<span class="px-1 rounded bg-black/70 text-on-surface">PG-13</span>
+<span class="flex items-center text-on-surface gap-0.5"><span class="material-symbols-outlined text-[12px] text-primary-container">star</span> 91%</span>
+</div>
+</div>
+<div class="p-1.5 bg-surface-container-low">
+<p class="font-label-md text-label-md text-on-surface truncate">Zero Degree</p>
+<p class="font-body-sm text-[11px] text-secondary truncate">Survival Drama</p>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="poster-item relative group flex flex-col rounded-lg overflow-hidden bg-surface-container-low shadow-md transition-all" data-title="Silent Roots" data-type="series">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-active:scale-105 transition-transform duration-300" data-alt="Nordic noir mystery television series poster showing foggy ancient pine forests shrouded in mountain mist with a solitary dark wooden cabin illuminated by a single warm lantern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClj4OKzFDwSK5_cVO7wK1JPbkDrtR9gBBsglPyAiJOD6YizliEyxt_PoSscUHv6wHefBevSWFilWIXytg9gJC3OmRKHy74PIKT5XnXe05y2DX8Aobl_ljb8R9huZmyWQ6V-x99RB68ZNgjFQpX0yr8WMplKyOj7egNAsJI-Lh1s4A64-SFxhqFU6TPRjreRuylWPg3bn7kaYjt043ihA_INDn3ITQu_5cj2BusNpiWArJ6iBj9T5vIIQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-black/30"></div>
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1 z-10">
+<span class="bg-primary-container text-on-primary-container font-label-sm text-[9px] uppercase px-1.5 py-0.5 rounded tracking-wider font-bold shadow">New Season</span>
+</div>
+<div class="edit-checkbox hidden absolute top-2 right-2 z-20">
+<input class="w-5 h-5 accent-primary-container rounded cursor-pointer" onchange="updateSelectedCount()" type="checkbox">
+</div>
+<button class="card-dots-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-on-surface active:bg-surface-bright z-10" onclick="openActionMenu(event, 'Silent Roots')">
+<span class="material-symbols-outlined text-body-md">more_vert</span>
+</button>
+<div class="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between text-[10px] text-secondary font-label-sm">
+<span class="px-1 rounded bg-black/70 text-on-surface">TV-MA</span>
+<span class="px-1 rounded bg-surface-variant text-on-surface-variant text-[9px]">HDR</span>
+</div>
+</div>
+<div class="p-1.5 bg-surface-container-low">
+<p class="font-label-md text-label-md text-on-surface truncate">Silent Roots</p>
+<p class="font-body-sm text-[11px] text-secondary truncate">Nordic Crime</p>
+</div>
+</div>
+<!-- Card 9 -->
+<div class="poster-item relative group flex flex-col rounded-lg overflow-hidden bg-surface-container-low shadow-md transition-all" data-title="Chronicles of Elderfall" data-type="series">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-active:scale-105 transition-transform duration-300" data-alt="High dark fantasy epic series poster showing a weathered armored warrior king holding a runic glowing sword atop a jagged snowy mountain cliff overlooking a burning castle valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv3URD6OqJailSItnnopta2w-STqjNTjs9Ca_BIu-xn6WhcfIxoCxLXgl78LmrlZdbTEpj6Hd5ZX0bCnbi-mmZfDs7qPCMzds5ag1jPFX7e2M1dFLVfbS6Ef5xQ32VFSbwIRfhgoEeTEI80BSmFotuHbsn4m61b4sT4oxjgnhMcyX8Mfv3DaSFQoeKgGW1_QG8ZS4mkP6N1n0Oyo0S0o5Tiy9K4yxmrh7jyWnTucoAaQSrqIYrYUTOEg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-black/30"></div>
+<div class="edit-checkbox hidden absolute top-2 right-2 z-20">
+<input class="w-5 h-5 accent-primary-container rounded cursor-pointer" onchange="updateSelectedCount()" type="checkbox">
+</div>
+<button class="card-dots-btn absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-on-surface active:bg-surface-bright z-10" onclick="openActionMenu(event, 'Chronicles of Elderfall')">
+<span class="material-symbols-outlined text-body-md">more_vert</span>
+</button>
+<div class="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between text-[10px] text-secondary font-label-sm">
+<span class="px-1 rounded bg-black/70 text-on-surface">TV-MA</span>
+<span class="flex items-center text-on-surface gap-0.5"><span class="material-symbols-outlined text-[12px] text-primary-container">star</span> 95%</span>
+</div>
+</div>
+<div class="p-1.5 bg-surface-container-low">
+<p class="font-label-md text-label-md text-on-surface truncate">Elderfall</p>
+<p class="font-body-sm text-[11px] text-secondary truncate">Dark Fantasy</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Recommendation Teaser Carousel -->
+<div class="mt-space-lg pt-space-md pb-space-sm bg-surface-container-lowest">
+<div class="px-gutter flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-headline-sm">auto_awesome</span>
+<h2 class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold">Recommended Based On Your List</h2>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:text-on-surface uppercase">Explore</button>
+</div>
+<div class="flex gap-space-sm overflow-x-auto pl-gutter pr-gutter no-scrollbar py-1">
+<!-- Rec Card 1 -->
+<div class="shrink-0 w-36 rounded-lg overflow-hidden bg-surface-container flex flex-col shadow-md active:scale-95 transition-transform">
+<div class="relative w-full aspect-[16/10]">
+<img class="w-full h-full object-cover" data-alt="Cinematic neo-western thriller poster featuring two rugged silhouetted sheriffs facing off at golden dusk in a dusty desert ghost town with bold cinematic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUhhRfwSfPExZnSRGdfcDrSJOLZR-5QAmNgbvzLD3UQT7eusXsC3So0hjJZJuYMhonV6Ezs_r4Y3HiMNCyMC3tEsuPrImtES4XnAsuvXsSvnMR64BaUohxiLT-mUp72G4DLXg-4-Zyqh4uBCoAyMpeAo_IOivbnb0BKz950CY4r-Uv1MD9-xE4CWHoYiRIppslIHkd_2mqzYvxY-UpHBSJSpV8FGZbaMQgDvSqav8tCnObl-GcJQ9kzQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<button class="absolute bottom-1.5 right-1.5 w-6 h-6 rounded-full bg-white text-black flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="p-2 flex flex-col gap-0.5">
+<span class="text-primary-container font-label-sm text-[10px] uppercase font-semibold">97% Match</span>
+<p class="font-label-md text-[13px] text-on-surface truncate font-medium">Dust &amp; Steel</p>
+<div class="flex items-center justify-between mt-1">
+<span class="text-[10px] text-secondary">Film</span>
+<button class="text-secondary hover:text-on-surface flex items-center" onclick="addToListQuick(this, 'Dust &amp; Steel')">
+<span class="material-symbols-outlined text-body-lg">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Rec Card 2 -->
+<div class="shrink-0 w-36 rounded-lg overflow-hidden bg-surface-container flex flex-col shadow-md active:scale-95 transition-transform">
+<div class="relative w-full aspect-[16/10]">
+<img class="w-full h-full object-cover" data-alt="High tech subterranean laboratory with scientists examining an ancient glowing crystalline monolith emitting vibrant amethyst electromagnetic waves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzSocUhDPvQPBtEFAn5m4OBpz2uHKKSfp4Wcoe6anPq4OMfdPUaG_CI-d6hGm8deXZtNFIFwFiTHWu-WMpgcg9CQvp03cTyEEs7jSrDGbp_5FWYAG8vHlNxbeajU2vKNjEPsfc1y3stxZ2-os0ksa6ohgWzshH4iyiJmPQKxM1o8ozgq6GpY3z9iu7czH2U0jwJ7V9nXwyCPLep10rtHWmbrw5gcQLWeic3G0eu2gOGFyBjCyvgRFcLQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<button class="absolute bottom-1.5 right-1.5 w-6 h-6 rounded-full bg-white text-black flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="p-2 flex flex-col gap-0.5">
+<span class="text-primary-container font-label-sm text-[10px] uppercase font-semibold">94% Match</span>
+<p class="font-label-md text-[13px] text-on-surface truncate font-medium">Monolith</p>
+<div class="flex items-center justify-between mt-1">
+<span class="text-[10px] text-secondary">Series</span>
+<button class="text-secondary hover:text-on-surface flex items-center" onclick="addToListQuick(this, 'Monolith')">
+<span class="material-symbols-outlined text-body-lg">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Rec Card 3 -->
+<div class="shrink-0 w-36 rounded-lg overflow-hidden bg-surface-container flex flex-col shadow-md active:scale-95 transition-transform">
+<div class="relative w-full aspect-[16/10]">
+<img class="w-full h-full object-cover" data-alt="Dark espionage political drama with intense portraits of government officials gathered in a tense midnight situation room surrounded by digital satellite projection screens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQFkBkgCsDGJ5VUqvfJTmgExa9rCoe9GCnYOeONZ1QDfp_nJff6aKnnL3HCxEdu9ZGZx6dF11GZ-TtuC4Y00m-irBdQ5cXnHYnZkwvXn7Dxgd3P_QRxSYvMlwyy8ZveyhwCMyl_XVaxo799Na68LTwM-_C1y_TtVdwbsxWFUfGBgyqQ7vEQksO69T8hF_NHgSOmT38GEWKHfqIviDieufyZwHKUHOGXQRAeDxR2w-Y8czTagbsAefKpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<button class="absolute bottom-1.5 right-1.5 w-6 h-6 rounded-full bg-white text-black flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="p-2 flex flex-col gap-0.5">
+<span class="text-primary-container font-label-sm text-[10px] uppercase font-semibold">91% Match</span>
+<p class="font-label-md text-[13px] text-on-surface truncate font-medium">The Directive</p>
+<div class="flex items-center justify-between mt-1">
+<span class="text-[10px] text-secondary">Series</span>
+<button class="text-secondary hover:text-on-surface flex items-center" onclick="addToListQuick(this, 'The Directive')">
+<span class="material-symbols-outlined text-body-lg">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Rec Card 4 -->
+<div class="shrink-0 w-36 rounded-lg overflow-hidden bg-surface-container flex flex-col shadow-md active:scale-95 transition-transform">
+<div class="relative w-full aspect-[16/10]">
+<img class="w-full h-full object-cover" data-alt="Mysterious gothic coastal lighthouse battered by titanic oceanic storm waves under lightning-streaked midnight clouds, cinematic moody deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkexxCwJ5KTSbBfRekAYuquNGNI6pZmbOMMlxfHWtuijUfElPy9Uigg3NUB9UVxC0ID_VTA2mbn4KtjEeGLKTzOFBLqpCe5pbh8BZvZ2UaidNCUBqZa2n_4yzw7kRFbLvAqeSmIRvsNyIvT-cOvdLQuWArVeCs5TIKfUOabbV96WLUKGKj_dYJOYZ01Px7m5gpPeB1PlvSFvfrhuMJcvUXfvxO6RXOwJC3qtnqUvJ3ReSmI05Qbw_JOQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<button class="absolute bottom-1.5 right-1.5 w-6 h-6 rounded-full bg-white text-black flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="p-2 flex flex-col gap-0.5">
+<span class="text-primary-container font-label-sm text-[10px] uppercase font-semibold">89% Match</span>
+<p class="font-label-md text-[13px] text-on-surface truncate font-medium">Beacon Point</p>
+<div class="flex items-center justify-between mt-1">
+<span class="text-[10px] text-secondary">Film</span>
+<button class="text-secondary hover:text-on-surface flex items-center" onclick="addToListQuick(this, 'Beacon Point')">
+<span class="material-symbols-outlined text-body-lg">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Sheet Modal for Quick Card Actions -->
+<div class="hidden fixed inset-0 z-50 flex items-end justify-center bg-black/75 backdrop-blur-sm" id="actionModal" onclick="closeActionMenu()">
+<div class="w-full max-w-md bg-surface-container-high rounded-t-2xl p-space-md shadow-2xl flex flex-col gap-space-sm" onclick="event.stopPropagation()">
+<div class="w-10 h-1 bg-secondary-container rounded-full mx-auto mb-1"></div>
+<div class="flex items-center justify-between pb-space-xs border-none">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalTitle">Title</h3>
+<p class="font-body-sm text-body-sm text-secondary">Quick Options</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary hover:text-on-surface" onclick="closeActionMenu()">
+<span class="material-symbols-outlined text-body-md">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<button class="flex items-center gap-space-sm w-full px-space-sm py-3 rounded-lg bg-surface-container hover:bg-surface-bright text-on-surface" onclick="triggerToast('Playing content...'); closeActionMenu();">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="font-label-md text-label-md font-semibold">Play Now</span>
+</button>
+<button class="flex items-center gap-space-sm w-full px-space-sm py-3 rounded-lg hover:bg-surface-container text-on-surface" onclick="triggerToast('Download started'); closeActionMenu();">
+<span class="material-symbols-outlined text-secondary">download</span>
+<span class="font-label-md text-label-md">Download Episode / Movie</span>
+</button>
+<button class="flex items-center gap-space-sm w-full px-space-sm py-3 rounded-lg hover:bg-surface-container text-on-surface" onclick="triggerToast('Shared link copied'); closeActionMenu();">
+<span class="material-symbols-outlined text-secondary">share</span>
+<span class="font-label-md text-label-md">Share Title</span>
+</button>
+<button class="flex items-center gap-space-sm w-full px-space-sm py-3 rounded-lg hover:bg-surface-container text-primary-container" onclick="removeActiveTitle(); closeActionMenu();">
+<span class="material-symbols-outlined">delete</span>
+<span class="font-label-md text-label-md font-semibold">Remove from My List</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Toast -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 px-space-md py-2.5 rounded-full bg-surface-bright/95 text-on-surface text-label-md font-label-md shadow-2xl backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center gap-2" id="toastNotification">
+<span class="material-symbols-outlined text-primary-container text-body-lg">info</span>
+<span id="toastText">Action completed</span>
+</div>
+</div>
+<script>
+  let isEditMode = false;
+  let activeSelectedTitle = '';
+
+  function toggleEditMode() {
+    isEditMode = !isEditMode;
+    const btn = document.getElementById('editToggleBtn');
+    const editText = document.getElementById('editText');
+    const editIcon = document.getElementById('editIcon');
+    const bulkBar = document.getElementById('bulkActionBar');
+    const checkboxes = document.querySelectorAll('.edit-checkbox');
+    const dots = document.querySelectorAll('.card-dots-btn');
+
+    if (isEditMode) {
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+      btn.classList.add('bg-primary-container', 'text-on-primary-container');
+      editText.textContent = 'Done';
+      editIcon.textContent = 'check';
+      bulkBar.classList.remove('hidden');
+      checkboxes.forEach(cb => cb.classList.remove('hidden'));
+      dots.forEach(d => d.classList.add('hidden'));
+    } else {
+      btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+      btn.classList.add('bg-surface-container', 'text-on-surface');
+      editText.textContent = 'Edit';
+      editIcon.textContent = 'tune';
+      bulkBar.classList.add('hidden');
+      checkboxes.forEach(cb => {
+        cb.classList.add('hidden');
+        const input = cb.querySelector('input');
+        if (input) input.checked = false;
+      });
+      dots.forEach(d => d.classList.remove('hidden'));
+      updateSelectedCount();
+    }
+  }
+
+  function updateSelectedCount() {
+    const checked = document.querySelectorAll('.edit-checkbox input:checked').length;
+    document.getElementById('selectedCounter').textContent = `${checked} selected`;
+  }
+
+  function selectAllItems() {
+    const checkboxes = document.querySelectorAll('.edit-checkbox input');
+    checkboxes.forEach(c => c.checked = true);
+    updateSelectedCount();
+  }
+
+  function deleteSelected() {
+    const checkedBoxes = document.querySelectorAll('.edit-checkbox input:checked');
+    if (checkedBoxes.length === 0) {
+      triggerToast('No titles selected');
+      return;
+    }
+    checkedBoxes.forEach(cb => {
+      const card = cb.closest('.poster-item');
+      if (card) card.remove();
+    });
+    triggerToast(`Removed ${checkedBoxes.length} items`);
+    toggleEditMode();
+    refreshCount();
+  }
+
+  function refreshCount() {
+    const remaining = document.querySelectorAll('.poster-item').length;
+    document.getElementById('titleCount').textContent = `(${remaining} Titles)`;
+  }
+
+  function setFilter(element, type) {
+    document.querySelectorAll('.filter-pill').forEach(pill => {
+      pill.classList.remove('bg-on-surface', 'text-surface');
+      pill.classList.add('bg-surface-container', 'text-secondary');
+    });
+    element.classList.remove('bg-surface-container', 'text-secondary');
+    element.classList.add('bg-on-surface', 'text-surface');
+
+    const cards = document.querySelectorAll('.poster-item');
+    cards.forEach(card => {
+      if (type === 'all') {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = card.dataset.type === type ? 'flex' : 'none';
+      }
+    });
+  }
+
+  function toggleSortMenu() {
+    const menu = document.getElementById('sortMenu');
+    menu.classList.toggle('hidden');
+  }
+
+  function selectSort(sortName) {
+    document.getElementById('currentSort').textContent = sortName;
+    document.getElementById('sortMenu').classList.add('hidden');
+    triggerToast(`Sorted by ${sortName}`);
+  }
+
+  function openActionMenu(e, title) {
+    e.stopPropagation();
+    activeSelectedTitle = title;
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('actionModal').classList.remove('hidden');
+  }
+
+  function closeActionMenu() {
+    document.getElementById('actionModal').classList.add('hidden');
+  }
+
+  function removeActiveTitle() {
+    const cards = document.querySelectorAll('.poster-item');
+    cards.forEach(c => {
+      if (c.dataset.title === activeSelectedTitle) {
+        c.remove();
+      }
+    });
+    refreshCount();
+    triggerToast(`Removed "${activeSelectedTitle}" from My List`);
+  }
+
+  function addToListQuick(btn, title) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (icon.textContent === 'add') {
+      icon.textContent = 'check';
+      btn.classList.add('text-primary-container');
+      triggerToast(`Added "${title}" to My List`);
+    } else {
+      icon.textContent = 'add';
+      btn.classList.remove('text-primary-container');
+      triggerToast(`Removed "${title}" from My List`);
+    }
+  }
+
+  function triggerToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    const toastText = document.getElementById('toastText');
+    toastText.textContent = msg;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }, 2200);
+  }
+
+  // Close menus on exterior clicks
+  document.addEventListener('click', (e) => {
+    const sortMenu = document.getElementById('sortMenu');
+    if (sortMenu && !sortMenu.contains(e.target) && !e.target.closest('button[onclick="toggleSortMenu()"]')) {
+      sortMenu.classList.add('hidden');
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.85)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-secondary hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-secondary hover:text-on-surface transition-all" data-path="movies-series" href="#"><span class="material-symbols-outlined">movie</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Movies</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-secondary hover:text-on-surface transition-all" data-path="search" href="#"><span class="material-symbols-outlined">explore</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Search</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 transition-all text-primary-container" data-path="my-list" href="#"><span class="material-symbols-outlined">playlist_play</span><span class="font-label-sm text-label-sm uppercase tracking-wider">My List</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-secondary hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined">account_circle</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Profile</span></a></div></nav></body></html>

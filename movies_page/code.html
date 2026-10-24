@@ -1,0 +1,362 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131313;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#ffb4aa", "tertiary-fixed-dim": "#a7c8ff", "on-background": "#e5e2e1", "on-secondary-fixed-variant": "#454747", "tertiary-fixed": "#d5e3ff", "secondary-fixed": "#e2e2e2", "secondary-fixed-dim": "#c6c6c7", "on-tertiary-container": "#f8f9ff", "on-error": "#690005", "on-error-container": "#ffdad6", "on-primary-container": "#fff7f6", "tertiary-container": "#0072d7", "surface-bright": "#393939", "surface": "#131313", "surface-container-high": "#2a2a2a", "surface-variant": "#353534", "surface-dim": "#131313", "outline-variant": "#5e3f3b", "error-container": "#93000a", "primary-container": "#e50914", "surface-container-highest": "#353534", "surface-container": "#201f1f", "primary": "#ffb4aa", "on-secondary": "#2f3131", "on-primary-fixed-variant": "#930007", "inverse-primary": "#c0000c", "background": "#131313", "surface-container-lowest": "#0e0e0e", "inverse-on-surface": "#313030", "secondary-container": "#454747", "inverse-surface": "#e5e2e1", "on-tertiary": "#003061", "surface-container-low": "#1c1b1b", "error": "#ffb4ab", "primary-fixed": "#ffdad5", "on-secondary-fixed": "#1a1c1c", "outline": "#af8782", "secondary": "#c6c6c7", "on-surface-variant": "#e9bcb6", "on-surface": "#e5e2e1", "tertiary": "#a7c8ff", "on-tertiary-fixed-variant": "#004689", "on-primary": "#690003", "on-tertiary-fixed": "#001b3c", "on-secondary-container": "#b4b5b5", "surface-tint": "#ffb4aa", "on-primary-fixed": "#410001" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-desktop": "4rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "margin-tablet": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "1rem", "space-xl": "2.5rem" }, fontFamily: { "headline-sm": ["Inter"], "display-hero-mobile": ["Bebas Neue"], "label-md": ["Inter"], "headline-lg": ["Bebas Neue"], "label-sm": ["Inter"], "headline-xl": ["Bebas Neue"], "body-lg": ["Inter"], "body-sm": ["Inter"], "display-hero": ["Bebas Neue"], "body-md": ["Inter"], "headline-xl-mobile": ["Bebas Neue"] }, fontSize: { "headline-sm": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-hero-mobile": ["56px", { lineHeight: "54px", letterSpacing: "0.02em", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "34px", letterSpacing: "0.04em", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "700" }], "headline-xl": ["48px", { lineHeight: "48px", letterSpacing: "0.03em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "display-hero": ["96px", { lineHeight: "92px", letterSpacing: "0.02em", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-xl-mobile": ["32px", { lineHeight: "34px", letterSpacing: "0.03em", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="StreamFlix Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UHyaYM4ithnbzTsWhwmc4mTMF_9kCRjm81kbfZv7vQtzs0gCigJ5Ta2tyt5J2iVISKXPK2VWNiUa_UjZLqtl0m1D4fUst3aufU-_FHnZDXHNE535cSryf14VglGPLC3ZuQ-XKrII7xxfjsGfErMO571tgrYVP87GnJlwuE9F9TSx4Q3nhFKRzDgYlDP6xXfpVJvKIjgEYWzAFtVfDEFmna0Qj5HfM5zBkyLb-oEgZXgM_9FIw9EhWcpU-z"><span class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-wider hidden xs:inline">Movies &amp; Series</span></div><div class="flex items-center gap-space-xs"><button aria-label="Cast to screen" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary-container transition-colors"><span class="material-symbols-outlined">cast</span></button><button aria-label="Search catalog" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary-container transition-colors"><span class="material-symbols-outlined">search</span></button><div class="w-11 h-11 flex items-center justify-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjsolIrz7twpKPSYChcXaWda1_Gne4QCYitoG8QvSm2vfuiWTuJwo0Rir137eVlwG9HLmZC-HnVP4Z_jByBWJTZ1i6HpTEcUoCJc_fu9vcTFTWZiEaITwVLd-BR71utGBw4uUZ3eWF9oLQ21tMp7Pmb2DSvOPLdm39scalFy7kET2mckXaczq5NJhJDgQB2W_nl1azs6E8fY3jeVHB_jCm_N7GfAvdFKjUMXJVDaqCNVS8QjTONp-XHw"></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Top Filter Pills Row -->
+<div class="flex items-center gap-space-xs overflow-x-auto px-gutter py-space-sm scrollbar-none sticky top-0 z-40 bg-surface/90 backdrop-blur-md">
+<button class="flex items-center gap-1 bg-surface-bright text-on-surface px-space-md py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap shadow-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+<span>All Genres</span>
+<span class="material-symbols-outlined text-sm">arrow_drop_down</span>
+</button>
+<button class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-space-md py-1.5 rounded-full whitespace-nowrap shadow-sm active:scale-95 transition-transform">
+      Action
+    </button>
+<button class="bg-surface-container text-secondary font-label-sm text-label-sm px-space-md py-1.5 rounded-full whitespace-nowrap hover:text-on-surface active:scale-95 transition-all">
+      Sci-Fi
+    </button>
+<button class="bg-surface-container text-secondary font-label-sm text-label-sm px-space-md py-1.5 rounded-full whitespace-nowrap hover:text-on-surface active:scale-95 transition-all">
+      Thriller
+    </button>
+<button class="bg-surface-container text-secondary font-label-sm text-label-sm px-space-md py-1.5 rounded-full whitespace-nowrap hover:text-on-surface active:scale-95 transition-all">
+      Horror
+    </button>
+<button class="bg-surface-container text-secondary font-label-sm text-label-sm px-space-md py-1.5 rounded-full whitespace-nowrap hover:text-on-surface active:scale-95 transition-all">
+      Drama
+    </button>
+<button class="bg-surface-container text-secondary font-label-sm text-label-sm px-space-md py-1.5 rounded-full whitespace-nowrap hover:text-on-surface active:scale-95 transition-all">
+      Comedy
+    </button>
+</div>
+<!-- Spotlight Featured Movie Billboard -->
+<section class="relative w-full overflow-hidden mb-space-xl">
+<div class="relative w-full aspect-[4/5] max-h-[520px]">
+<img class="w-full h-full object-cover object-top" data-alt="Cinematic thriller movie poster of a covert operative standing in neon-lit rain-slicked Tokyo street, moody deep obsidian shadows, red backlight flare, intense cinematic mist, ultra realistic 8k, moody atmospheric lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXwQTFFKtI18GT1B0WlC4CJOpt__fyOjy2tVxqZ6HTb9eUthK3DT-J4CM7mqSzQwbYozhySuv1xnWnPjMFRw60JZFV_QYds3NUcpSr8U774AOekEDIba8i-fWAwwE_xz3SPF54UmYXYPko_xpEKGwdMnrN3EkK6rgceYwNfLJkyvh-90w7XW5NBhI1EwRE9GQC00hUCYrt2gG3fnD0h7N8EhhIAd8YvS6GBDpsvPVhKO5wz8Cb5GBGnQ">
+<!-- Gradient Scrims -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/70 via-transparent to-transparent"></div>
+<!-- Spotlight Content -->
+<div class="absolute bottom-0 left-0 right-0 p-gutter flex flex-col items-center text-center">
+<!-- Badge -->
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm tracking-widest text-primary-fixed uppercase drop-shadow-sm font-bold">STREAM ORIGINAL FILM</span>
+</div>
+<!-- Movie Title -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface uppercase tracking-wider mb-1 drop-shadow-lg leading-none">
+          SHADOW PROTOCOL
+        </h1>
+<!-- Tags & Meta -->
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm mb-space-md">
+<span class="text-tertiary-fixed font-bold">98% Match</span>
+<span class="text-secondary/60">•</span>
+<span>2024</span>
+<span class="text-secondary/60">•</span>
+<span class="bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded text-[10px] font-bold">UHD</span>
+<span class="text-secondary/60">•</span>
+<span>Espionage • Neo-Noir</span>
+</div>
+<!-- Action CTA Buttons -->
+<div class="flex items-center justify-center gap-space-sm w-full max-w-xs">
+<button class="flex-1 flex items-center justify-center gap-2 bg-on-surface text-surface py-2.5 px-space-md rounded font-label-md text-label-md hover:bg-on-surface/90 active:scale-95 transition-all shadow-md">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 bg-secondary-container/80 backdrop-blur-md text-on-surface py-2.5 px-space-md rounded font-label-md text-label-md hover:bg-secondary-container active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>My List</span>
+</button>
+<button aria-label="More Info" class="w-10 h-10 flex items-center justify-center bg-secondary-container/80 backdrop-blur-md text-on-surface rounded-full hover:bg-secondary-container active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-lg">info</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Action & Adventure Blockbusters (3-column responsive grid) -->
+<section class="px-gutter mb-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-1 h-4 bg-primary-container rounded-full"></div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-wide">
+          Action &amp; Adventure Blockbusters
+        </h2>
+</div>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary-fixed transition-colors flex items-center" href="#">
+        Explore <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- 3-Column Poster Grid -->
+<div class="grid grid-cols-3 gap-space-xs">
+<!-- Card 1 -->
+<div class="flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Explosive movie poster featuring a supersonic stealth jet carving through storm clouds with fiery orange engine trails against dramatic dark midnight sky, hyper-detailed action cinematography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiE30IxCXnGViu2088GRicR_IZ_5h9E0X9gZdtEYdWAn942jXXeABt4rZQF5rLBlOWb4qTwK3XUUJwMJp6BLZjaqfWa2WwLrCUaYJOIUZn5OP_Pp58iKiKP4XYO6L_hBNTAaBE6aF4nx6w25j5q4NPR0tHz2cKbyRg0evGVfpOmW082DuKBY-2b1oTodDTD0cHICf-_APHiQ8ugDMJPd9Q_kQVnK_AVlkQpb9js_dTir8yDsVq8rtkuA">
+<div class="absolute top-1 left-1 bg-primary-container text-on-primary-container px-1 py-0.5 rounded text-[9px] font-bold tracking-tight">
+            TOP 10
+          </div>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface px-1 py-0.2 rounded text-[8px] font-bold">
+            4K
+          </div>
+</div>
+<div class="p-1.5 flex flex-col gap-0.5">
+<h3 class="font-label-sm text-label-sm text-on-surface truncate font-semibold">Apex Vector</h3>
+<div class="flex items-center justify-between text-[10px] text-secondary">
+<span>2h 14m</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface-variant text-[9px]">PG-13</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Gritty adrenaline action poster of a motorcycle racer sliding sideways through molten asphalt spark shower in cyberpunk metropolis, red and gunmetal grey aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC63UNGDg6FgJ1PsN3Rf4ANhGWniX_C0rQ3opAua3yp9NyrNjguuPlpqmSP3w64-ic_phAlSyByNw1aZFEvjDS06wcrpKrYyKkDeO_zqTP6saHCsnl1xIsFJtRnRkHsjtvuCrp2E6FixyUpy9pv_0zebrl28E2wfPCZjHpdx9dP-UgVKz5vSugpU7INjMNTr3Xw8HZ9yTA4dvhNuy-n6y-v_y4s_beM6KHGP_NM1m3K9uktj-sxru4w2Q">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface px-1 py-0.2 rounded text-[8px] font-bold">
+            4K
+          </div>
+</div>
+<div class="p-1.5 flex flex-col gap-0.5">
+<h3 class="font-label-sm text-label-sm text-on-surface truncate font-semibold">Redline Velocity</h3>
+<div class="flex items-center justify-between text-[10px] text-secondary">
+<span>1h 58m</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface-variant text-[9px]">PG-13</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Intense martial arts warrior silhouette standing poised in front of fractured mirror reflections in rainy downtown alleyway, dramatic moody crimson key lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxtcXmGUk5s1creMscB2DOhFAvIY1jGrgrCURWklhQ-CbYy-y5CwnxWVedf1A2A9nDczvNvhux5K_ybhzd8QUD2xJ-kHYVi8LLvBYA9eksqRSl-rGfUgK5NetmDXj1nBW3R-zoTgIRwG5a-vXq0D3HP42d9vtsQgZnQzi6szi6ekxFZw1K8fQXc3OZVIazS-Tc3ryUjezDiHRsR-8U_A22ZQGTYuh-WCv4DROc4ZdyeaW46smNyEf1PA">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface px-1 py-0.2 rounded text-[8px] font-bold">
+            4K
+          </div>
+</div>
+<div class="p-1.5 flex flex-col gap-0.5">
+<h3 class="font-label-sm text-label-sm text-on-surface truncate font-semibold">Iron Claw</h3>
+<div class="flex items-center justify-between text-[10px] text-secondary">
+<span>2h 05m</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface-variant text-[9px]">PG-13</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Deep ocean submersible facing colossal deep sea leviathan trench glowing bioluminescent cyan and crimson red, cinematic atmospheric suspense poster." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy3yPrkX-FJcoIu3UF_faZba7H6-vj8uv95YUdgUrrV1DfmJl0qE0Ln84igmnoi1aRuLjhM1e3UzSLFjZOcfYGp9FmUM9zC7KkX9j9HKD5fiuiiiIXQcH934Q5HRGOXSxDJQuUBbr0o6NDMeoL3RUtbAlSJBcHIaCBHCUjSsMDFDCaQ7kgWt_ZMLGGnPrH_jFiQd-i7mCoBDdQ5IR5OfcrPRAk7KSTxoWADIYdGAzo0DKV8jUvaSeDog">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface px-1 py-0.2 rounded text-[8px] font-bold">
+            4K
+          </div>
+</div>
+<div class="p-1.5 flex flex-col gap-0.5">
+<h3 class="font-label-sm text-label-sm text-on-surface truncate font-semibold">Abyss Rift</h3>
+<div class="flex items-center justify-between text-[10px] text-secondary">
+<span>2h 21m</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface-variant text-[9px]">PG-13</span>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Tactical mountain rescue operative hanging from cable above dizzying snowy crevasse with helicopter spotlight piercing whiteout snow blizzard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxuKS9bGOHnNwGMSNvql7iSoksNJkPQ7riPwFghVy4cyOWF2OzLVGlD3ZyqrFIxGpXgBZ_HDoWYCttP3UWHwzoL4ZLODsheBUa-dNmQOGgfl36ywK-sZTk1pykbzUG0LxVihIc7UfmwfTGxelhdYivrdeDaxl7LInv3_ch8yZNFJDqxEaW7XH0nA5GBV2P3TEhGKAaUBwM44-_mR4X6yqz_7eaOQcKApAs1pMcXTbKbyHsxs9y1ocSSw">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface px-1 py-0.2 rounded text-[8px] font-bold">
+            4K
+          </div>
+</div>
+<div class="p-1.5 flex flex-col gap-0.5">
+<h3 class="font-label-sm text-label-sm text-on-surface truncate font-semibold">Zero Degree</h3>
+<div class="flex items-center justify-between text-[10px] text-secondary">
+<span>1h 49m</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface-variant text-[9px]">PG-13</span>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="High stakes heist thriller poster with luxury vault cracked open, masked crew under sweeping blue laser tripwires in sleek minimalist bank architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz1Hl_9bj8kJLUJSzj4DrZGAxHLCqI-kB-DcDSPKxZG-MSib7cbG548SmCZtmZaLTlfRVoIQw25XOlotOqyDfC-nldcVXdr789k2GEZ0QFbzfwzXyxvY_mvVllL5uVKXbzXF9b_eFIvPu-7TYkhQCYtm8NRSMyT5siyhN_6sfz8DxeUxRFcH1cRbUVpi8wEfRU2dG5EXHMQskjiDMCVIvShG-emBz6pPL2dXlViIjiQe-U4BU9Vuu3Rg">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface px-1 py-0.2 rounded text-[8px] font-bold">
+            4K
+          </div>
+</div>
+<div class="p-1.5 flex flex-col gap-0.5">
+<h3 class="font-label-sm text-label-sm text-on-surface truncate font-semibold">The Vault Job</h3>
+<div class="flex items-center justify-between text-[10px] text-secondary">
+<span>2h 12m</span>
+<span class="bg-surface-variant px-1 rounded text-on-surface-variant text-[9px]">PG-13</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Critically Acclaimed Dramas (Horizontal Scroll Shelf) -->
+<section class="mb-space-xl">
+<div class="flex items-center justify-between px-gutter mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-1 h-4 bg-tertiary rounded-full"></div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-wide">
+          Critically Acclaimed Dramas
+        </h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Swipe</span>
+</div>
+<!-- Scroll Lane -->
+<div class="flex gap-space-sm overflow-x-auto px-gutter scrollbar-none pb-1">
+<!-- Drama Card 1 -->
+<div class="flex-none w-36 flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Intimate film festival drama poster with an elderly conductor holding a violin overlooking misty autumn lake, subtle golden hour reflections, warm melancholy mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzg44r-8h0XTnw4bmFMwjQnE3ljl0OBwwLYnjcf6jq_5PsRbR48gDyc7ZyrF81fJ43u-U-UQJtUkrj-0dvbbKetc2Ew5VeNdoD00mqwJ5MHzaonSRW38Yp0Ijj7Fh_np2hsGXOB6BlO9Px9SXq6qa0hK5qpqs9EuH0-3yGMtOi88FrlODURm4b_YwuGcU-qhIMKPghzYUKHh4o_UwNH1Rbw3oykVltesyV4YqQVKZH4nTNNHvqCiP22Q">
+<div class="absolute top-1.5 left-1.5 bg-surface-container-lowest/85 backdrop-blur-sm px-1.5 py-0.5 rounded text-[10px] font-bold text-tertiary-fixed">
+            99% Match
+          </div>
+</div>
+<div class="p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">The Final Opus</span>
+<span class="text-[10px] text-secondary truncate">Academy Award Nominee</span>
+</div>
+</div>
+<!-- Drama Card 2 -->
+<div class="flex-none w-36 flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Emotional drama poster of two estranged sisters embracing under towering pine forest in heavy overcast mist, muted earth tones, prestigious cinema style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw5AiLuPAA7ileI98Q3E6OSbadOMo7e8kSNfEK3SZ183Yxnu8F6rsdyYkxNM5DXPj2YJGv9bPw38TZcAztFwyPGjfVEIGLT-JCC6xuV0PIFsF6hsKlj00A-dy8HvDVp_Ne3W6SPZNM6Wc8XAdJWuBn_YBEZyYEA603wJ-VhOEr6wavKQO9IYBB0qvIWxQoV8Z1x8TKLjidw_f9_SwnmDv4vaeftAsgIrww3i5ZCnN_k65XxyonYlh5xA">
+<div class="absolute top-1.5 left-1.5 bg-surface-container-lowest/85 backdrop-blur-sm px-1.5 py-0.5 rounded text-[10px] font-bold text-tertiary-fixed">
+            96% Match
+          </div>
+</div>
+<div class="p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Silent Roots</span>
+<span class="text-[10px] text-secondary truncate">Grand Jury Prize Winner</span>
+</div>
+</div>
+<!-- Drama Card 3 -->
+<div class="flex-none w-36 flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Tense legal courtroom drama poster showing silhouette of lone defense attorney against high cathedral windows with dust motes drifting in shafts of amber sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtIStX-wQhs_5J7S5bKxf4z53Q2Z5G3F8ZXBZEqHvf9WQSzZTEBD06s30eNFPH3bOhAO7ppXQUs8KQ2VihwLjrMfj0-JxSIr8jAmohdBI4c9wuJUXxX6fdFmtAv0r_VVFy16yxOrmXFQWilRjWY4PiGTQJmff31BrcqfbrdPmhYKfV7-9KThj2Qb1WFiCuvl559yv4q0RFo2xtC1XD12ZAHyNbITITtDOupxGTIlE6R2LXSmNk3Yqksg">
+<div class="absolute top-1.5 left-1.5 bg-surface-container-lowest/85 backdrop-blur-sm px-1.5 py-0.5 rounded text-[10px] font-bold text-tertiary-fixed">
+            97% Match
+          </div>
+</div>
+<div class="p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">The Verdict</span>
+<span class="text-[10px] text-secondary truncate">Best Adapted Screenplay</span>
+</div>
+</div>
+<!-- Drama Card 4 -->
+<div class="flex-none w-36 flex flex-col bg-surface-container rounded overflow-hidden group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Heartfelt generational family drama poster set on coastal Italian terrace overlooking pastel sunset waters, warm Mediterranean light and nostalgic grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2TsLAc22ysZDfppAATtjYUkRf2BURyPnSXzOh5elRw3tRuwxENth-w2J0sYYvKzpEsLrJFasg3USd9r2YRtY6Y6jO1AkqoM-y5_PjZaRSPZcpPPp4yliTVUDaQCmTkLrBkiTX6VlFCEni2V-Zn97T1a6xTgHpeWzCxQ5GCDjSFsEdbpLtpBPX3zxYcjuRbcgweUoIr5WKA3WEBs6tB4HTTdKFglTujzRHPbt0cA7lYwj1pX7b1raltA">
+<div class="absolute top-1.5 left-1.5 bg-surface-container-lowest/85 backdrop-blur-sm px-1.5 py-0.5 rounded text-[10px] font-bold text-tertiary-fixed">
+            95% Match
+          </div>
+</div>
+<div class="p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Aura Di Mare</span>
+<span class="text-[10px] text-secondary truncate">Critics Pick</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Sci-Fi & Fantasy Universe (Widescreen Cards with Quick Play overlay) -->
+<section class="px-gutter mb-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-1 h-4 bg-primary rounded-full"></div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-wide">
+          Sci-Fi &amp; Fantasy Universe
+        </h2>
+</div>
+<span class="material-symbols-outlined text-secondary">tune</span>
+</div>
+<!-- Widescreen high impact cards stack -->
+<div class="flex flex-col gap-space-md">
+<!-- Sci-Fi Card 1 -->
+<div class="relative w-full rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<div class="relative aspect-video w-full">
+<img class="w-full h-full object-cover" data-alt="Epic widescreen sci-fi visual showing a massive planetary ring system shadowed by colossal interstellar ring megastructure station, deep violet and crimson nebulae, ultra realistic space photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfkYNGbRZFTkJuHVPBoej0BidYhn1iD9eTvIh1KuwVv7EeuaV0e6VKSlcTQm-B2Z5VrNLUpZNI6p4S1v9mEQvX65Li9-EkwDySvftd_K2HE-B7HcUVvvxl6KQHMhXoM9WDgcj87YHoBgmjAlGf7i4hjYU0L5Nlz1QXcx8k3SIAD6f8snTb2kkY0rNZniG2T-U5oCP0_R6e_uFkhMicGkT7ELkTNS4Iyz4YJYx_CgnzjddrYIVMnSKIsQ">
+<!-- Gradient overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Quick Play Tap Button Overlay -->
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-12 h-12 rounded-full bg-on-surface/90 text-surface flex items-center justify-center shadow-xl transform transition-transform duration-200 group-hover:scale-110 active:scale-95">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<!-- Top Metadata Badge -->
+<div class="absolute top-2 left-2 flex items-center gap-1.5">
+<span class="bg-primary-container text-on-primary-container px-2 py-0.5 rounded text-[10px] font-bold">STREAM EXCLUSIVE</span>
+<span class="bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded text-[10px] font-bold">IMAX ENHANCED</span>
+</div>
+<!-- Bottom Card Details -->
+<div class="absolute bottom-2 left-3 right-3 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface uppercase tracking-wider leading-tight drop-shadow-sm">
+                ASTRID PRIME
+              </span>
+<div class="flex items-center gap-2 text-[11px] text-secondary">
+<span class="text-tertiary-fixed font-bold">97% Match</span>
+<span>2024</span>
+<span>Sci-Fi Epic</span>
+<span class="border border-outline/30 px-1 rounded text-[9px]">4K HDR</span>
+</div>
+</div>
+<button aria-label="Add Astrid Prime to list" class="w-8 h-8 rounded-full bg-secondary-container/70 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-secondary-container">
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+</div>
+</div>
+<!-- In-progress bar snippet -->
+<div class="w-full bg-surface-container-high h-1">
+<div class="bg-primary-container h-full w-2/3"></div>
+</div>
+</div>
+<!-- Sci-Fi Card 2 -->
+<div class="relative w-full rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<div class="relative aspect-video w-full">
+<img class="w-full h-full object-cover" data-alt="High fantasy cinematic panorama of an ancient towering obsidian tower floating over an incandescent violet crystal gorge with glowing mythical runes and dragons circling in clouds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjA4uRVvjxuT89_tfdjewMvAuNHOBSZRk8Ci60RMhZC_scOS-LOPLk6vuUadocog2JzBIL97MxLd74U7OXK3Lu-buWt7MxRu1D2XatY_S16m_e4QZXzMd5lyQCSr6mZsyj8ubeOxsbuDlqcBCBPcYaQODbCbzw7AMzJNa4gO_PGWq8E_-R1ZFmNNorCOmegTXYwkvdgIqYVghZZKLaWCcssRuYTSc1KrVHfpuUubab-F899sE9TzUYSQ">
+<!-- Gradient overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Quick Play Tap Button Overlay -->
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-12 h-12 rounded-full bg-on-surface/90 text-surface flex items-center justify-center shadow-xl transform transition-transform duration-200 group-hover:scale-110 active:scale-95">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<!-- Top Metadata Badge -->
+<div class="absolute top-2 left-2 flex items-center gap-1.5">
+<span class="bg-surface-container-lowest/80 text-on-surface px-1.5 py-0.5 rounded text-[10px] font-bold">DOLBY VISION</span>
+</div>
+<!-- Bottom Card Details -->
+<div class="absolute bottom-2 left-3 right-3 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface uppercase tracking-wider leading-tight drop-shadow-sm">
+                CHRONICLES OF ELDERFALL
+              </span>
+<div class="flex items-center gap-2 text-[11px] text-secondary">
+<span class="text-tertiary-fixed font-bold">94% Match</span>
+<span>2023</span>
+<span>High Fantasy</span>
+<span class="border border-outline/30 px-1 rounded text-[9px]">TV-MA</span>
+</div>
+</div>
+<button aria-label="Add Chronicles of Elderfall to list" class="w-8 h-8 rounded-full bg-secondary-container/70 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-secondary-container">
+<span class="material-symbols-outlined text-base">check</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive micro-feedback script -->
+<script>
+    document.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        if (!this.classList.contains('active-bounce')) {
+          this.classList.add('scale-90');
+          setTimeout(() => this.classList.remove('scale-90'), 150);
+        }
+      });
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.85)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-secondary hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-secondary hover:text-on-surface transition-all" data-path="movies-series" href="#"><span class="material-symbols-outlined">movie</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Movies</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-secondary hover:text-on-surface transition-all" data-path="search" href="#"><span class="material-symbols-outlined">explore</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Search</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-secondary hover:text-on-surface transition-all" data-path="my-list" href="#"><span class="material-symbols-outlined">playlist_play</span><span class="font-label-sm text-label-sm uppercase tracking-wider">My List</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-secondary hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined">account_circle</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Profile</span></a></div></nav></body></html>
